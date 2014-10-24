@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3911d461d3bf40a4b017c6edd722adfb" Name="Diagram1">
+        <EntityTypeShape EntityType="commit_fiveModel.campusReference" Width="1.5" PointX="0.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="commit_fiveModel.college" Width="1.5" PointX="3" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="commit_fiveModel.noner" Width="1.5" PointX="3" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="commit_fiveModel.staff" Width="1.5" PointX="3" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="commit_fiveModel.student" Width="1.5" PointX="3" PointY="17.125" IsExpanded="true" />
+        <AssociationConnector Association="commit_fiveModel.FK_college_campusReference" ManuallyRouted="false" />
+        <AssociationConnector Association="commit_fiveModel.FK_noner_campusReference" ManuallyRouted="false" />
+        <AssociationConnector Association="commit_fiveModel.FK_staff_campusReference" ManuallyRouted="false" />
+        <AssociationConnector Association="commit_fiveModel.FK_student_campusReference" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

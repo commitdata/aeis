@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="commit_fiveModelStoreContainer" CdmEntityContainer="commit_fiveEntities">
+    <EntitySetMapping Name="campusReference">
+      <EntityTypeMapping TypeName="commit_fiveModel.campusReference">
+        <MappingFragment StoreEntitySet="campusReference">
+          <ScalarProperty Name="CampusId" ColumnName="CampusId" />
+          <ScalarProperty Name="CAMPUS" ColumnName="CAMPUS" />
+          <ScalarProperty Name="CAMPNAME" ColumnName="CAMPNAME" />
+          <ScalarProperty Name="CNTYNAME" ColumnName="CNTYNAME" />
+          <ScalarProperty Name="COUNTY" ColumnName="COUNTY" />
+          <ScalarProperty Name="DISTNAME" ColumnName="DISTNAME" />
+          <ScalarProperty Name="GRDSPAN" ColumnName="GRDSPAN" />
+          <ScalarProperty Name="GRDTYPE" ColumnName="GRDTYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="college">
+      <EntityTypeMapping TypeName="commit_fiveModel.college">
+        <MappingFragment StoreEntitySet="college">
+          <ScalarProperty Name="CAMPUS" ColumnName="CAMPUS" />
+          <ScalarProperty Name="CampusId" ColumnName="CampusId" />
+          <ScalarProperty Name="YEAR" ColumnName="YEAR" />
+          <ScalarProperty Name="CB0CT" ColumnName="CB0CT" />
+          <ScalarProperty Name="CB0CC" ColumnName="CB0CC" />
+          <ScalarProperty Name="CB0CS" ColumnName="CB0CS" />
+          <ScalarProperty Name="CB0CA" ColumnName="CB0CA" />
+          <ScalarProperty Name="CA0CT" ColumnName="CA0CT" />
+          <ScalarProperty Name="CA0CC" ColumnName="CA0CC" />
+          <ScalarProperty Name="CA0CS" ColumnName="CA0CS" />
+          <ScalarProperty Name="CA0CA" ColumnName="CA0CA" />
+          <ScalarProperty Name="CH0CT" ColumnName="CH0CT" />
+          <ScalarProperty Name="CH0CC" ColumnName="CH0CC" />
+          <ScalarProperty Name="CH0CS" ColumnName="CH0CS" />
+          <ScalarProperty Name="CH0CA" ColumnName="CH0CA" />
+          <ScalarProperty Name="CW0CT" ColumnName="CW0CT" />
+          <ScalarProperty Name="CW0CC" ColumnName="CW0CC" />
+          <ScalarProperty Name="CW0CS" ColumnName="CW0CS" />
+          <ScalarProperty Name="CW0CA" ColumnName="CW0CA" />
+          <ScalarProperty Name="CM0CT" ColumnName="CM0CT" />
+          <ScalarProperty Name="CM0CC" ColumnName="CM0CC" />
+          <ScalarProperty Name="CM0CS" ColumnName="CM0CS" />
+          <ScalarProperty Name="CM0CA" ColumnName="CM0CA" />
+          <ScalarProperty Name="CF0CT" ColumnName="CF0CT" />
+          <ScalarProperty Name="CF0CC" ColumnName="CF0CC" />
+          <ScalarProperty Name="CF0CS" ColumnName="CF0CS" />
+          <ScalarProperty Name="CF0CA" ColumnName="CF0CA" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="noner">
+      <EntityTypeMapping TypeName="commit_fiveModel.noner">
+        <MappingFragment StoreEntitySet="noner">
+          <ScalarProperty Name="CAMPUS" ColumnName="CAMPUS" />
+          <ScalarProperty Name="CampusId" ColumnName="CampusId" />
+          <ScalarProperty Name="YEAR" ColumnName="YEAR" />
+          <ScalarProperty Name="CB0AT" ColumnName="CB0AT" />
+          <ScalarProperty Name="CA0AT" ColumnName="CA0AT" />
+          <ScalarProperty Name="CW0AT" ColumnName="CW0AT" />
+          <ScalarProperty Name="CH0AT" ColumnName="CH0AT" />
+          <ScalarProperty Name="CE0AT" ColumnName="CE0AT" />
+          <ScalarProperty Name="CL0AT" ColumnName="CL0AT" />
+          <ScalarProperty Name="CM0AT" ColumnName="CM0AT" />
+          <ScalarProperty Name="CF0AT" ColumnName="CF0AT" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="staff">
+      <EntityTypeMapping TypeName="commit_fiveModel.staff">
+        <MappingFragment StoreEntitySet="staff">
+          <ScalarProperty Name="CAMPUS" ColumnName="CAMPUS" />
+          <ScalarProperty Name="CampusId" ColumnName="CampusId" />
+          <ScalarProperty Name="YEAR" ColumnName="YEAR" />
+          <ScalarProperty Name="CPST00FP" ColumnName="CPST00FP" />
+          <ScalarProperty Name="CPST01FP" ColumnName="CPST01FP" />
+          <ScalarProperty Name="CPST11FP" ColumnName="CPST11FP" />
+          <ScalarProperty Name="CPST06FP" ColumnName="CPST06FP" />
+          <ScalarProperty Name="CPST20FP" ColumnName="CPST20FP" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="student">
+      <EntityTypeMapping TypeName="commit_fiveModel.student">
+        <MappingFragment StoreEntitySet="student">
+          <ScalarProperty Name="CAMPUS" ColumnName="CAMPUS" />
+          <ScalarProperty Name="CampusId" ColumnName="CampusId" />
+          <ScalarProperty Name="YEAR" ColumnName="YEAR" />
+          <ScalarProperty Name="CPETHISP" ColumnName="CPETHISP" />
+          <ScalarProperty Name="CPETBLAP" ColumnName="CPETBLAP" />
+          <ScalarProperty Name="CPETWHIP" ColumnName="CPETWHIP" />
+          <ScalarProperty Name="CPETLEPP" ColumnName="CPETLEPP" />
+          <ScalarProperty Name="CPETECOP" ColumnName="CPETECOP" />
+          <ScalarProperty Name="CPETALLC" ColumnName="CPETALLC" />
+          <ScalarProperty Name="CPERRAKR" ColumnName="CPERRAKR" />
+          <ScalarProperty Name="CPERRA1R" ColumnName="CPERRA1R" />
+          <ScalarProperty Name="CPERRA2R" ColumnName="CPERRA2R" />
+          <ScalarProperty Name="CPERRA3R" ColumnName="CPERRA3R" />
+          <ScalarProperty Name="CPERRA4R" ColumnName="CPERRA4R" />
+          <ScalarProperty Name="CPERRA5R" ColumnName="CPERRA5R" />
+          <ScalarProperty Name="CPERRA6R" ColumnName="CPERRA6R" />
+          <ScalarProperty Name="CPERRA7R" ColumnName="CPERRA7R" />
+          <ScalarProperty Name="CPERRA8R" ColumnName="CPERRA8R" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

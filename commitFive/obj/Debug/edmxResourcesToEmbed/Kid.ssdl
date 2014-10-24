@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="commit_fiveModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="campusReference">
+    <Key>
+      <PropertyRef Name="CampusId" />
+    </Key>
+    <Property Name="CampusId" Type="int" Nullable="false" />
+    <Property Name="CAMPUS" Type="varchar" MaxLength="50" />
+    <Property Name="CAMPNAME" Type="varchar" MaxLength="50" />
+    <Property Name="CNTYNAME" Type="varchar" MaxLength="50" />
+    <Property Name="COUNTY" Type="varchar" MaxLength="50" />
+    <Property Name="DISTNAME" Type="varchar" MaxLength="50" />
+    <Property Name="GRDSPAN" Type="varchar" MaxLength="50" />
+    <Property Name="GRDTYPE" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="college">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="CAMPUS" Type="varchar" MaxLength="50" />
+    <Property Name="CampusId" Type="int" Nullable="false" />
+    <Property Name="YEAR" Type="varchar" MaxLength="50" />
+    <Property Name="CB0CT" Type="varchar" MaxLength="50" />
+    <Property Name="CB0CC" Type="varchar" MaxLength="50" />
+    <Property Name="CB0CS" Type="varchar" MaxLength="50" />
+    <Property Name="CB0CA" Type="varchar" MaxLength="50" />
+    <Property Name="CA0CT" Type="varchar" MaxLength="50" />
+    <Property Name="CA0CC" Type="varchar" MaxLength="50" />
+    <Property Name="CA0CS" Type="varchar" MaxLength="50" />
+    <Property Name="CA0CA" Type="varchar" MaxLength="50" />
+    <Property Name="CH0CT" Type="varchar" MaxLength="50" />
+    <Property Name="CH0CC" Type="varchar" MaxLength="50" />
+    <Property Name="CH0CS" Type="varchar" MaxLength="50" />
+    <Property Name="CH0CA" Type="varchar" MaxLength="50" />
+    <Property Name="CW0CT" Type="varchar" MaxLength="50" />
+    <Property Name="CW0CC" Type="varchar" MaxLength="50" />
+    <Property Name="CW0CS" Type="varchar" MaxLength="50" />
+    <Property Name="CW0CA" Type="varchar" MaxLength="50" />
+    <Property Name="CM0CT" Type="varchar" MaxLength="50" />
+    <Property Name="CM0CC" Type="varchar" MaxLength="50" />
+    <Property Name="CM0CS" Type="varchar" MaxLength="50" />
+    <Property Name="CM0CA" Type="varchar" MaxLength="50" />
+    <Property Name="CF0CT" Type="varchar" MaxLength="50" />
+    <Property Name="CF0CC" Type="varchar" MaxLength="50" />
+    <Property Name="CF0CS" Type="varchar" MaxLength="50" />
+    <Property Name="CF0CA" Type="varchar" MaxLength="50" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="noner">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="CAMPUS" Type="varchar" MaxLength="50" />
+    <Property Name="CampusId" Type="int" Nullable="false" />
+    <Property Name="YEAR" Type="varchar" MaxLength="50" />
+    <Property Name="CB0AT" Type="varchar" MaxLength="50" />
+    <Property Name="CA0AT" Type="varchar" MaxLength="50" />
+    <Property Name="CW0AT" Type="varchar" MaxLength="50" />
+    <Property Name="CH0AT" Type="varchar" MaxLength="50" />
+    <Property Name="CE0AT" Type="varchar" MaxLength="50" />
+    <Property Name="CL0AT" Type="varchar" MaxLength="50" />
+    <Property Name="CM0AT" Type="varchar" MaxLength="50" />
+    <Property Name="CF0AT" Type="varchar" MaxLength="50" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="staff">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="CAMPUS" Type="varchar" MaxLength="50" />
+    <Property Name="CampusId" Type="int" Nullable="false" />
+    <Property Name="YEAR" Type="varchar" MaxLength="50" />
+    <Property Name="CPST00FP" Type="varchar" MaxLength="50" />
+    <Property Name="CPST01FP" Type="varchar" MaxLength="50" />
+    <Property Name="CPST11FP" Type="varchar" MaxLength="50" />
+    <Property Name="CPST06FP" Type="varchar" MaxLength="50" />
+    <Property Name="CPST20FP" Type="varchar" MaxLength="50" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="student">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="CAMPUS" Type="varchar" MaxLength="50" />
+    <Property Name="CampusId" Type="int" Nullable="false" />
+    <Property Name="YEAR" Type="varchar" MaxLength="50" />
+    <Property Name="CPETHISP" Type="varchar" MaxLength="50" />
+    <Property Name="CPETBLAP" Type="varchar" MaxLength="50" />
+    <Property Name="CPETWHIP" Type="varchar" MaxLength="50" />
+    <Property Name="CPETLEPP" Type="varchar" MaxLength="50" />
+    <Property Name="CPETECOP" Type="varchar" MaxLength="50" />
+    <Property Name="CPETALLC" Type="varchar" MaxLength="50" />
+    <Property Name="CPERRAKR" Type="varchar" MaxLength="50" />
+    <Property Name="CPERRA1R" Type="varchar" MaxLength="50" />
+    <Property Name="CPERRA2R" Type="varchar" MaxLength="50" />
+    <Property Name="CPERRA3R" Type="varchar" MaxLength="50" />
+    <Property Name="CPERRA4R" Type="varchar" MaxLength="50" />
+    <Property Name="CPERRA5R" Type="varchar" MaxLength="50" />
+    <Property Name="CPERRA6R" Type="varchar" MaxLength="50" />
+    <Property Name="CPERRA7R" Type="varchar" MaxLength="50" />
+    <Property Name="CPERRA8R" Type="varchar" MaxLength="50" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_college_campusReference">
+    <End Role="campusReference" Type="Self.campusReference" Multiplicity="1" />
+    <End Role="college" Type="Self.college" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="campusReference">
+        <PropertyRef Name="CampusId" />
+      </Principal>
+      <Dependent Role="college">
+        <PropertyRef Name="CampusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_noner_campusReference">
+    <End Role="campusReference" Type="Self.campusReference" Multiplicity="1" />
+    <End Role="noner" Type="Self.noner" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="campusReference">
+        <PropertyRef Name="CampusId" />
+      </Principal>
+      <Dependent Role="noner">
+        <PropertyRef Name="CampusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_staff_campusReference">
+    <End Role="campusReference" Type="Self.campusReference" Multiplicity="1" />
+    <End Role="staff" Type="Self.staff" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="campusReference">
+        <PropertyRef Name="CampusId" />
+      </Principal>
+      <Dependent Role="staff">
+        <PropertyRef Name="CampusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_student_campusReference">
+    <End Role="campusReference" Type="Self.campusReference" Multiplicity="1" />
+    <End Role="student" Type="Self.student" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="campusReference">
+        <PropertyRef Name="CampusId" />
+      </Principal>
+      <Dependent Role="student">
+        <PropertyRef Name="CampusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="commit_fiveModelStoreContainer">
+    <EntitySet Name="campusReference" EntityType="Self.campusReference" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="college" EntityType="Self.college" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="noner" EntityType="Self.noner" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="staff" EntityType="Self.staff" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="student" EntityType="Self.student" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_college_campusReference" Association="Self.FK_college_campusReference">
+      <End Role="campusReference" EntitySet="campusReference" />
+      <End Role="college" EntitySet="college" />
+    </AssociationSet>
+    <AssociationSet Name="FK_noner_campusReference" Association="Self.FK_noner_campusReference">
+      <End Role="campusReference" EntitySet="campusReference" />
+      <End Role="noner" EntitySet="noner" />
+    </AssociationSet>
+    <AssociationSet Name="FK_staff_campusReference" Association="Self.FK_staff_campusReference">
+      <End Role="campusReference" EntitySet="campusReference" />
+      <End Role="staff" EntitySet="staff" />
+    </AssociationSet>
+    <AssociationSet Name="FK_student_campusReference" Association="Self.FK_student_campusReference">
+      <End Role="campusReference" EntitySet="campusReference" />
+      <End Role="student" EntitySet="student" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
